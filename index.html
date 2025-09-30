@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Собственные стили -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+       
+    <!-- Нав -->
+    <nav class="navbar navbar-expand-md navbar-dark px-3 py-2 w-100 position-absolute top-0 start-0 z-3">
+        <div class="container-fluid">
+      
+          <!-- Логотип -->
+          <a class="navbar-brand" href="index.html">
+            <img src="Logo.svg" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 150px;">
+            <img src="Logo.svg" alt="Логотип" class="img-fluid d-block d-md-none" style="max-height: 100px;">
+          </a>
+      
+          <!-- Бургер кнопка — только на мобильных -->
+          <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background: transparent;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="7" x2="26" y2="7" />
+                <line x1="4" y1="15" x2="26" y2="15" />
+                <line x1="4" y1="23" x2="26" y2="23" />
+            </svg>
+        </button>
+      
+          <!-- Меню для десктопа -->
+          <div class="collapse navbar-collapse d-none d-md-block" id="mainNav">
+            <ul class="navbar-nav ms-auto text-center text-md-start">
+              <li class="nav-item"><a class="nav-link" href="index.html">Avaleht</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">Meist</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Teenused</a></li>
+              <li class="nav-item"><a class="nav-link" href="#prices">Hinnad</a></li>
+            </ul>
+            <a href="rusindex.html" class="btn btn-primary ms-3">RUS</a>
+
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Offcanvas меню — только на мобильных -->
+      <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel" style="background-color: #00863E;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menüü</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+        </div>
+        <div class="offcanvas-body">
+            </div>
+    
+          <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Avaleht</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">Meist</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Teenused</a></li>
+            <li class="nav-item"><a class="nav-link" href="#prices">Hinnad</a></li>
+          </ul>
+          <div class="text-center mt-3">
+            <a href="rusindex.html" class="btn-lang">RUS</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    
+    <!-- 👇 ОБЯЗАТЕЛЬНО внизу страницы -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+
+    <section class="p-5 mt-custom" style="background-color: #092918; color: white;">
+        <div class="container">
+            <div class="row align-items-center">
+    
+                <div class="col-lg-7 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    
+                    <h1 class="display-4 fw-bold">
+                        Teie <span style="color: #00863E;">usaldusväärne</span><br>raamatupidamispartner
+                    </h1>
+                    
+                    <p class="lead mt-3 mb-4">
+                        Professionaalsed raamatupidamisteenused<br>ettevõtetele Eestis
+                    </p>
+    
+                    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start">
+                        
+                        <a href="#contact" class="btn btn-lg me-sm-4 mb-3 mb-sm-0" style="background-color: #00863e; color: white; border: none; padding: 10px 30px; text-decoration: none;">
+                            Võta meiega ühendust
+                        </a>
+    
+                        <div class="d-flex align-items-center p-2 rounded" style="background-color: #092918; border: 1px solid #00863E;">
+                            <img src="Logo.svg" alt="Логотип" style="width: 40px; height: 40px; margin-right: 5px;">
+                            
+                            <span style="color: #ffc107; margin-right: 5px;">★★★★★</span>
+                            <span style="font-size: 0.9rem;">5/5</span>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 col-md-12 d-flex justify-content-center">
+                    <img src="Card(bank).png" class="img-fluid" alt="Бухгалтерская карта Pronksi" style="max-width: 400px; border-radius: 15px;">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+            
+    <section class="py-5" style="background-color: #092918; color: white;">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold">
+                        Meie saavutused <br><span style="color: #00863E;">arvudes</span>
+                    </h2>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center g-4">
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex"> 
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="1k Клиентов">
+                        <div class="content">
+                            <div class="number">1k</div>
+                            <div class="label">Klienti</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex">
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="3 Языка общения">
+                        <div class="content">
+                            <div class="number">3</div>
+                            <div class="label">Suhtluskeelt</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex">
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="100% Доверия">
+                        <div class="content">
+                            <div class="number">100%</div>
+                            <div class="label">Usaldus</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex">
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="25 лет Опыта">
+                        <div class="content">
+                            <div class="number">25 aastat</div>
+                            <div class="label">Kogemust</div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+      
+      
+    <section id="about" class="py-5 mt-5" style="background-color: #092918; color: white;">
+        <div class="container">
+            <div class="row align-items-center" data-aos="fade-up">
+                
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <img src="Image1.png" class="img-fluid rounded" alt="Работа с планшетом" style="max-height: 500px; width: 100%; object-fit: cover;">
+                </div>
+    
+                <div class="col-lg-6 col-md-12 p-4 p-lg-0">
+                    <p class="text-uppercase mb-1" style="color: #00863E; font-size: 0.9rem;">Meist</p>
+                    
+                    <h2 class="display-5 fw-bold mb-4">
+                        Miks koostöö <br>
+                        <span style="color: #00863E;">meiega</span> on mugav ja <br>kasulik
+                    </h2>
+                    
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="me-2" style="color: #00863E; font-size: 1.5rem;">•</span>
+                            Raamatupidamiskulude vähendamine.
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="me-2" style="color: #00863E; font-size: 1.5rem;">•</span>
+                            Äriliste protsesside katkematus.
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <span class="me-2" style="color: #00863E; font-size: 1.5rem;">•</span>
+                            Üks mure vähem.
+                        </li>
+                        <li class="mb-4 d-flex align-items-center">
+                            <span class="me-2" style="color: #00863E; font-size: 1.5rem;">•</span>
+                            Kõrge pädevus.
+                        </li>
+                    </ul>
+    
+                    <a href="#prices" class="btn btn-lg" style="background-color: #00863e; color: white; border: none; padding: 10px 30px; text-decoration: none; border-radius: 50px;">
+                        Hinnad
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="services" class="py-5 mt-5" style="background-color: #092918; color: white;">
+        <div class="container">
+            
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold">
+                        Mida me teeme teie <br>
+                        <span style="color: #00863E;">rahu ja kasvu nimel</span>
+                    </h2>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center g-4 mb-5">
+                
+                <style>
+                    /* Стили для размещения контента поверх изображения */
+                    .service-card-container {
+                        position: relative;
+                        width: 100%;
+                        height: 100%; 
+                        min-height: 450px; 
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        text-align: center;
+                        color: white; 
+                    }
+        
+                    .service-card-container img.card-bg { /* Изменено на class="card-bg" для фона */
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: 1;
+                        border-radius: 0.5rem; 
+                        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+                    }
+    
+                    .service-card-container .content {
+                        position: relative;
+                        z-index: 2;
+                        padding: 30px; 
+                    }
+                    
+                    .service-card-container .icon {
+                        margin-bottom: 20px;
+                    }
+                    
+                    /* Новый стиль для PNG-иконок */
+                    .service-card-container .icon-png {
+                        width: 160px; /* Размер иконки */
+                        height: auto;
+                        display: block;
+                        margin: 0 auto 10px auto; /* Центрирование и небольшой отступ */
+                    }
+    
+                    .service-card-container h3 {
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+                    
+                    .service-card-container p {
+                        font-size: 1rem;
+                        opacity: 0.85;
+                    }
+                </style>
+        
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex" data-aos="fade-up" data-aos-delay="0"> 
+                    <div class="service-card-container">
+                        <img src="Rectangle2.png" class="card-bg" alt="Фон">
+                        
+                        <div class="content">
+                            <div class="icon">
+                                <img src="icon1.png" alt="Иконка бухгалтерия" class="icon-png">
+                                </div>
+                            
+                            <h3>Täielik raamatupidamine</h3>
+                            <p>
+                                Arvestus, aruandlus, palgaarvestus, e-arved — täpselt, õigeaegselt ja ilma liigsete muredeta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-card-container">
+                        <img src="Rectangle2.png" class="card-bg" alt="Фон">
+                        
+                        <div class="content">
+                            <div class="icon">
+                                <img src="icon2.png" alt="Иконка юридическое" class="icon-png">
+                                </div>
+                            
+                            <h3>Juriidiline ja maksualane tugi</h3>
+                            <p>
+                                Ettevõtte registreerimine ja muudatused äriregistris, abi maksude, tööõiguse ja töötajate vormistamisega.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-container">
+                        <img src="Rectangle2.png" class="card-bg" alt="Фон">
+                        
+                        <div class="content">
+                            <div class="icon">
+                                <img src="icon3.png" alt="Иконка аудит" class="icon-png">
+                                </div>
+                            
+                            <h3>Audit ja sõltumatu kontroll</h3>
+                            <p>
+                                Auditiks ettevalmistus, koostöö kontrollorganitega ja sõltumatute audiitoritega.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="#contact" class="btn btn-lg" style="background-color: #00863e; color: white; border: none; padding: 10px 40px; text-decoration: none; border-radius: 50px;">
+                        Loe Lähemalt
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="prices" class="py-5" style="background-color: #092918; color: white;">
+        <div class="container">
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold">Meie teenused</h2>
+                    <p class="lead" style="opacity: 0.85;">
+                        Kõik, mida teie ettevõte vajab — raamatupidamisest <br> kuni konsultatsioonide ja igapäevase toeni.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center g-4">
+                
+                <style>
+                    /* Стили для кнопок, чтобы имитировать ваш макет */
+                    .service-link-card {
+                        display: block; /* Делает <a> блочным элементом */
+                        text-decoration: none;
+                        color: white;
+                        border-radius: 0.5rem;
+                        overflow: hidden; /* Обрезает все, что выходит за пределы, включая img */
+                        transition: transform 0.3s ease, box-shadow 0.3s ease;
+                        height: 100%; /* Гарантирует одинаковую высоту */
+                        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+                    }
+    
+                    .service-link-card:hover {
+                        transform: translateY(-5px); /* Легкий эффект поднятия */
+                        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+                    }
+                    
+                    .service-link-card .card-image {
+                        width: 100%;
+                        height: 200px; /* Фиксированная высота для изображений */
+                        object-fit: cover;
+                    }
+                    
+                    .service-link-card .card-body {
+                        background-color: #00863E; /* Темно-зеленый фон для текста */
+                        padding: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .service-link-card .card-title {
+                        margin: 0;
+                        font-size: 1.25rem;
+                        font-weight: bold;
+                    }
+                    
+                    .service-link-card .arrow-icon {
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 10px;
+                    }
+                </style>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex" data-aos="fade-up" data-aos-delay="0">
+                    <a href="koruslugi_est.html" class="service-link-card">
+                        <img src="Uslugi1.png" class="card-image" alt="Корпоративные услуги">
+                        <div class="card-body">
+                            <span class="card-title">Ettevõtlusteenused</span>
+                            <img src="Arrow.png" class="arrow-icon" alt="Стрелка">
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex" data-aos="fade-up" data-aos-delay="150">
+                    <a href="kvuslugi_est.html" class="service-link-card">
+                        <img src="uslugi2.png" class="card-image" alt="Обслуживание кв. товариществ">
+                        <div class="card-body">
+                            <span class="card-title">Korteriühistute<br>teenindamine</span>
+                            <img src="Arrow.png" class="arrow-icon" alt="Стрелка">
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <a href="predprijatie_est.html" class="service-link-card">
+                        <img src="uslugi3.png" class="card-image" alt="Обслуживание предприятий">
+                        <div class="card-body">
+                            <span class="card-title">Ettevõtete<br>teenindamine</span>
+                            <img src="Arrow.png" class="arrow-icon" alt="Стрелка">
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex" data-aos="fade-up" data-aos-delay="450">
+                    <a href="dopuslugi_est.html" class="service-link-card">
+                        <img src="uslugi4.png" class="card-image" alt="Дополнительные услуги">
+                        <div class="card-body">
+                            <span class="card-title">Lisateenused</span>
+                            <img src="Arrow.png" class="arrow-icon" alt="Стрелка">
+                        </div>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+      
+
+    <section id="banner" class="py-5" style="background-color: #092918; color: white;">
+        <div class="container" data-aos="fade-up">
+    
+            <div class="position-relative overflow-hidden rounded-3 shadow-lg p-5 text-center d-flex flex-column align-items-center justify-content-center" style="min-height: 400px;">
+                
+                <img src="OpitnajaKom.png" alt="Фон 'Опытная команда'" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 1;">
+    
+                <div class="position-relative" style="z-index: 2;">
+                    
+                    <h2 class="display-5 fw-bold mb-4">
+                        Kogenud meeskond, <br>
+                        suunatud teie tulemusele
+                    </h2>
+                    
+                    <p class="lead col-lg-8 mx-auto mb-4" style="opacity: 0.85;">
+                        Me töötame teie edu nimel: keskendume kvaliteedile, pöörame tähelepanu detailidele ja oleme alati olemas, kui vaja.
+                        Teie raamatupidamine — usaldusväärsetes ja professionaalsetes kätes.
+                    </p>
+    
+                    <a href="#contact" class="btn btn-lg" style="background-color: #00863e; color: white; border: none; padding: 10px 40px; text-decoration: none; border-radius: 50px;">
+                        Võta meiega ühendust
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="useful-links" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <div class="position-relative overflow-hidden rounded-3 shadow-lg p-5 text-center" style="min-height: 450px;">
+                
+                <img src="OpitnajaKom.png" alt="Фон 'Полезные ссылки'" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 1;">
+    
+                <div class="position-relative" style="z-index: 2; color: white;">
+                    
+                    <h2 class="display-5 fw-bold mb-4">
+                        Kasulikud <span style="color: #00863E;">lingid</span>
+                    </h2>
+                    
+                    <p class="lead col-lg-8 mx-auto mb-5" style="opacity: 0.85;">
+                        Ametlikud ressursid ja tööriistad, <br> mis võivad teie ettevõttele kasulikud olla.
+                    </p>
+    
+                    <div class="row text-start justify-content-center">
+                        
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="https://www.emta.ee" target="_blank" class="link-light text-decoration-none">Maksu- ja Tolliamet</a></li>
+                                <li class="mb-2"><a href="https://www.stat.ee/et" target="_blank" class="link-light text-decoration-none">Statistikaamet</a></li>
+                                <li class="mb-2"><a href="https://e-arved.ee/" target="_blank" class="link-light text-decoration-none">Ettevõtjale</a></li>
+                                <li class="mb-2"><a href="https://mtr.ttja.ee/public" target="_blank" class="link-light text-decoration-none">Majandustegevuse register</a></li>
+                                <li class="mb-2"><a href="https://juhatus.ee/ru/" target="_blank" class="link-light text-decoration-none">Korteriühistute foorum</a></li>
+                                <li class="mb-2"><a href="https://www.riigiteataja.ee/en/search/legal_acts" target="_blank" class="link-light text-decoration-none">Seadused</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="https://www.haigekassa.ee" target="_blank" class="link-light text-decoration-none">Haigekassa</a></li>
+                                <li class="mb-2"><a href="https://x-tee.ee/" target="_blank" class="link-light text-decoration-none">X-tee</a></li>
+                                <li class="mb-2"><a href="https://eteenindus.mnt.ee/main.html#autod" target="_blank" class="link-light text-decoration-none">Maanteamet</a></li>
+                                <li class="mb-2"><a href="https://www.seb.ee" target="_blank" class="link-light text-decoration-none">SEB</a></li>
+                                <li class="mb-2"><a href="https://tootukassa.ee" target="_blank" class="link-light text-decoration-none">Töötukassa</a></li>
+                                <li class="mb-2"><a href="https://www.kalkulaator.ee" target="_blank" class="link-light text-decoration-none">Palgakalkulaator</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="https://ariregister.rik.ee" target="_blank" class="link-light text-decoration-none">Äriregister</a></li>
+                                <li class="mb-2"><a href="https://ariregister.rik.ee/eng" target="_blank" class="link-light text-decoration-none">Aastaaruanne</a></li>
+                                <li class="mb-2"><a href="https://www.krediidiinfo.ee/en/" target="_blank" class="link-light text-decoration-none">Juriidiliste isikute maksevõime</a></li>
+                                <li class="mb-2"><a href="https://www.swedbank.ee/private" target="_blank" class="link-light text-decoration-none">SWEDBANK</a></li>
+                                <li class="mb-2"><a href="https://www.pensionikeskus.ee/en/" target="_blank" class="link-light text-decoration-none">Pensioniinfo</a></li>
+                                <li class="mb-2"><a href="https://www.haigekassa.ee" target="_blank" class="link-light text-decoration-none">Haigushüvitised</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-5" style="background-color: #092918; color: white;">
+        <div class="container" data-aos="fade-up">
+            <div class="row align-items-center">
+    
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">
+                        Jätke päringu <br>
+                        <span style="color: #00863E;">— saate konsultatsiooni</span>
+                    </h2>
+                    <p class="lead" style="opacity: 0.85;">
+                        Võtame teiega ühendust ja aitame leida teie ettevõtte vajadustele parima lahenduse. Kiirelt, selgelt ja ilma kohustusteta.
+                    </p>
+                </div>
+    
+                <div class="col-lg-6 col-md-12" data-aos="fade-left">
+                    <div class="position-relative rounded-3 overflow-hidden shadow-lg p-4" style="min-height: 550px;">
+                        <img src="ContactForm.png" alt="Фон формы заявки" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 1;">
+    
+                        <div class="position-relative p-4" style="z-index: 2;">
+                            <form action="https://formsubmit.co/pronksirb.website@gmail.com" method="POST" class="row g-3">
+    
+                                <input type="hidden" name="_next" value="successet.html">
+                                
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Nimi</label>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Sisestage nimi" required style="background-color: #00863E; color: white; border-color: #00863E;">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Telefon</label>
+                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Sisestage telefon" required style="background-color: #00863E; color: white; border-color: #00863E;">
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Sisestage e-mail" required style="background-color: #00863E; color: white; border-color: #00863E;">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Kuidas saame teid aidata?</label>
+                                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="Sisestage sõnum" required style="background-color: #00863E; color: white; border-color: #00863E;"></textarea>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-lg w-100" style="background-color: #00863e; color: white; border: none; padding: 10px; border-radius: 50px;">
+                                        Saada
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5" style="background-color: #092918; color: white;">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                
+                <div class="col-lg-3 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <div class="d-inline-block">
+                        <img src="Logo.svg" alt="PronksiRB Logo" style="width: 150px; margin-bottom: 20px;">
+                        <p class="lead fs-5" style="opacity: 0.85;">
+                            Raamatupidamine,<br><span style="color: #00863E;">mida saab usaldada</span>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <p class="text-uppercase mb-3 fs-6" style="opacity: 0.85;">
+                        Alustame koostööd <span style="color: #00863E;">juba täna</span>
+                    </p>
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="icon4.png" alt="Адрес" class="me-3" style="width: 80px;">
+                            <span class="fs-6">Vesivärava 50-212, Tallinn 10126</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="icon5.png" alt="Email" class="me-3" style="width: 80px;">
+                            <div class="d-flex flex-column text-start fs-6">
+                                <a href="mailto:info@pronksirb.ee" class="text-decoration-none" style="color: white; opacity: 0.85;">info@pronksirb.ee</a>
+                                <a href="mailto:sekretar@pronksirb.ee" class="text-decoration-none" style="color: white; opacity: 0.85;">sekretar@pronksirb.ee</a>
+                                <a href="mailto:larissa@pronksirb.ee" class="text-decoration-none" style="color: white; opacity: 0.85;">larissa@pronksirb.ee</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="icon6.png" alt="Телефон" class="me-3" style="width: 80px;">
+                            <div class="d-flex flex-column text-start fs-6">
+                                <a href="tel:+3726410108" class="text-decoration-none" style="color: white; opacity: 0.85;">+372 6410108, +372 6410 109</a>
+                                <a href="tel:+3725156260" class="text-decoration-none" style="color: white; opacity: 0.85;">+372 51 56 260, +372 5021702</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-12 text-center text-lg-end mt-4 mt-lg-0">
+                    <img src="zdanie.png" class="img-fluid rounded shadow" alt="Офис PronksiRB" style="max-height: 250px; object-fit: cover;">
+                </div>
+                
+            </div>
+            
+            <hr class="mt-4 mb-3" style="border-color: rgba(255, 255, 255, 0.2);">
+            <div class="row">
+                <div class="col-12 text-center" style="opacity: 0.7;">
+                    <p class="mb-0">
+                        OÜ Pronksi Raamatupidamisbüroo Reg.Nr 10586403 © 2025 Kõik õigused kaitstud.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="text-center py-4" style="background-color: #092918; color: white;">
+        <p class="mb-0" style="opacity: 0.7;">
+            Designed and built by 
+            <a href="https://www.instagram.com/ne.klinika/" target="_blank" style="color: #00863E; text-decoration: none; font-weight: bold;">NE KLINIKA</a>
+        </p>
+    </div>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // Анимация только при первом появлении
+    duration: 800, // Длительность анимации в мс
+    offset: 100 // Смещение триггера анимации
+  });
+</script>

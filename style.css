@@ -1,0 +1,159 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #092918; /* Фон сайта */
+    color: #ffffff; /* Белый текст по умолчанию */
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  /* Заголовки */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* Bold */
+    margin-bottom: 0.5em;
+    color: #ffffff; /* Белый текст заголовков */
+  }
+  
+  /* Параграфы */
+  p {
+    margin-bottom: 1em;
+  }
+  
+  /* Ссылки */
+  a {
+    color: #4ade80; /* Нежно-зелёный (можно подогнать под дизайн) */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #22c55e; /* Более яркий зелёный при наведении */
+  }
+  
+  /* Кнопки */
+  button, .btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: #4ade80;
+    color: #092918;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: #22c55e;
+  }
+  
+  /* --- Стили для меню --- */
+.navbar-nav .nav-link {
+    font-size: 32px;       /* размер текста */
+    padding: 12px 20px;    /* внутр. отступы */
+    margin: 0 60px;         /* расстояние между кнопками */
+    font-weight: 500;      /* чуть жирнее */
+  }
+  
+  .dropdown-menu .dropdown-item {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+  
+  .navbar-nav .btn {
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 8px;
+  }
+  
+  
+  
+  .btn,
+button,
+.hero-btn {
+  background-color: #00863E;
+  color: black;
+  border: none;
+  font-weight: bold;
+  padding: 20px 60px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+}
+
+.btn:hover,
+button:hover,
+.hero-btn:hover {
+  background-color: #00863E;
+  color: black;
+  border: none;
+  font-weight: bold;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+  
+
+/* Добавьте этот стиль в ваш основной файл CSS. 
+   Я использовал 100px, но вы можете изменить это значение
+   (например, на 150px, 200px или 10rem)
+   по своему усмотрению.
+*/
+.mt-custom {
+    margin-top: 200px !important; 
+    /* !important добавлен для гарантии переопределения стандартных стилей, 
+       но лучше избегать его и обеспечить, чтобы ваш CSS загружался позже Bootstrap. */
+}
+
+ 
+
+/* Вынесите это в ваш файл CSS */
+.stat-image-container {
+    position: relative; /* Чтобы дочерний элемент можно было абсолютно позиционировать */
+    width: 100%;
+    height: 100%; /* Убедитесь, что контейнер имеет высоту, если нужно */
+    display: flex; /* Используем flexbox для центрирования содержимого */
+    flex-direction: column; /* Элементы будут выстраиваться по вертикали */
+    justify-content: center; /* Центрирование по вертикали */
+    align-items: center; /* Центрирование по горизонтали */
+    text-align: center; /* Центрирование текста */
+    color: white; /* Цвет текста поверх изображения */
+}
+
+.stat-image-container img {
+    position: absolute; /* Позиционируем изображение абсолютно */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Изображение будет покрывать весь контейнер, не искажаясь */
+    z-index: 1; /* Изображение под текстом */
+    border-radius: 0.5rem; /* Скругление углов, если нужно */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+.stat-image-container .content {
+    position: relative; /* Текст поверх изображения, поэтому выше z-index */
+    z-index: 2; /* Текст над изображением */
+    padding: 20px; /* Отступы для текста */
+    /* Можно добавить фон для текста, если изображение слишком пестрое
+       background-color: rgba(0, 0, 0, 0.4); 
+       border-radius: 5px; 
+    */
+}
+ .stat-image-container .content .number {
+    font-size: 2.5rem; /* Размер шрифта для чисел */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Отступ под числом */
+    line-height: 1.2; /* Межстрочный интервал */
+}
+.stat-image-container .content .label {
+    font-size: 1.1rem; /* Размер шрифта для подписей */
+    opacity: 0.9; /* Небольшая прозрачность для подписей */
+}
+

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Собственные стили -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+       
+    <!-- Нав -->
+    <nav class="navbar navbar-expand-md navbar-dark px-3 py-2 w-100 position-absolute top-0 start-0 z-3">
+        <div class="container-fluid">
+      
+          <!-- Логотип -->
+          <a class="navbar-brand" href="index.html">
+            <img src="Logo.svg" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 150px;">
+            <img src="Logo.svg" alt="Логотип" class="img-fluid d-block d-md-none" style="max-height: 100px;">
+          </a>
+      
+          <!-- Бургер кнопка — только на мобильных -->
+          <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background: transparent;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="7" x2="26" y2="7" />
+                <line x1="4" y1="15" x2="26" y2="15" />
+                <line x1="4" y1="23" x2="26" y2="23" />
+            </svg>
+        </button>
+      
+          <!-- Меню для десктопа -->
+          <div class="collapse navbar-collapse d-none d-md-block" id="mainNav">
+            <ul class="navbar-nav ms-auto text-center text-md-start">
+              <li class="nav-item"><a class="nav-link" href="index.html">Avaleht</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Meist</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Teenused</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Hinnad</a></li>
+            </ul>
+            <a href="kvuslugi_rus.html" class="btn btn-primary ms-3">RUS</a>
+
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Offcanvas меню — только на мобильных -->
+      <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel" style="background-color: #00863E;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menüü</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+        </div>
+        <div class="offcanvas-body">
+            </div>
+    
+          <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Avaleht</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Meist</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Teenused</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Hinnad</a></li>
+          </ul>
+          <div class="text-center mt-3">
+            <a href="kvuslugi_rus.html" class="btn-lang">RUS</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    
+    <!-- 👇 ОБЯЗАТЕЛЬНО внизу страницы -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <section id="page-hero" class="py-5 mt-custom" style="background-color: #092918; color: white;">
+        <div class="container">
+            
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12 text-center">
+                    
+                    <h1 class="display-4 fw-bold mb-3">
+                        Korteriühistute teenindamine
+                    </h1>
+                    
+                    <p class="lead col-lg-8 mx-auto" style="opacity: 0.85;">
+                        Professionaalne raamatupidamine ühistutele <br>ilma liigsete muredeta.
+                    </p>
+                    
+                </div>
+            </div>
+    
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-lg-10 col-md-12">
+                    <img 
+                        src="kvuslugi.png" 
+                        alt="Корпоративные услуги" 
+                        class="img-fluid rounded-3 shadow-lg" 
+                        style="width: 100%; height: auto; max-height: 500px; object-fit: cover;"
+                    >
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <section id="kv-tovarish-services" class="py-5" style="background-color: #092918; color: white;">
+        <div class="container">
+            
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12 text-center text-lg-start">
+                    <h2 class="display-5 fw-bold mb-3">
+                        <span style="color: #00863E;">Korteriühistute</span> raamatupidamisteenus
+                    </h2>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center g-4">
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex"> 
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="1k Клиентов">
+                        
+                        <div class="content">
+                            <div class="label">1-16<br>korterit</div>
+                            <div class="number">alates 80€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex"> 
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="1k Клиентов">
+                        
+                        <div class="content">
+                            <div class="label">17-32<br>korterit</div>
+                            <div class="number">alates 130€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex"> 
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="1k Клиентов">
+                        
+                        <div class="content">
+                            <div class="label">33-46<br>korterit</div>
+                            <div class="number">alates 150€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex"> 
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="1k Клиентов">
+                        
+                        <div class="content">
+                            <div class="label">47-72<br>korterit</div>
+                            <div class="number">alates 180€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex"> 
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="1k Клиентов">
+                        
+                        <div class="content">
+                            <div class="label">73-80<br>korterit</div>
+                            <div class="number">alates 200€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex"> 
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="1k Клиентов">
+                        
+                        <div class="content">
+                            <div class="label">+100<br>korterit</div>
+                            <div class="number">alates 201€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex"> 
+                    <div class="stat-image-container">
+                        <img src="Rectangle1.png" alt="1k Клиентов">
+                        
+                        <div class="content">
+                            <div class="label">+200<br>korterit</div>
+                            <div class="number">alates 300€</div>
+                        </div>
+                    </div>
+                </div>
+    
+                
+                
+                <div class="col-lg-3 col-md-6 col-sm-6 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#contact" class="btn btn-lg px-5 py-3 fw-bold" style="background-color: #00863E; color: white; border-radius: 50px;">
+                        Võta meiega ühendust
+                    </a>
+                </div>
+
+                <div class="row mt-5" data-aos="fade-up">
+            
+                    <div class="col-12">
+                        
+                        <div class="d-flex flex-column align-items-start"> 
+                            
+                            <p class="mb-1" style="font-size: 1rem; opacity: 0.8;">
+                                * Kõigile hindadele lisandub 24% käibemaks
+                            </p>
+                            
+                            <p style="font-size: 1rem; opacity: 0.8;">
+                                * Aastaaruanne sisaldub teenuse hinnas
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5" style="background-color: #092918; color: white;">
+        <div class="container" data-aos="fade-up">
+            <div class="row align-items-center">
+    
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">
+                        Jätke päringu <br>
+                        <span style="color: #00863E;">— saate konsultatsiooni</span>
+                    </h2>
+                    <p class="lead" style="opacity: 0.85;">
+                        Võtame teiega ühendust ja aitame leida teie ettevõtte vajadustele parima lahenduse. Kiirelt, selgelt ja ilma kohustusteta.
+                    </p>
+                </div>
+    
+                <div class="col-lg-6 col-md-12" data-aos="fade-left">
+                    <div class="position-relative rounded-3 overflow-hidden shadow-lg p-4" style="min-height: 550px;">
+                        <img src="ContactForm.png" alt="Фон формы заявки" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 1;">
+    
+                        <div class="position-relative p-4" style="z-index: 2;">
+                            <form action="https://formsubmit.co/pronksirb.website@gmail.com" method="POST" class="row g-3">
+    
+                                <input type="hidden" name="_next" value="successet.html">
+                                
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Nimi</label>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Sisestage nimi" required style="background-color: #00863E; color: white; border-color: #00863E;">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Telefon</label>
+                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Sisestage telefon" required style="background-color: #00863E; color: white; border-color: #00863E;">
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Sisestage e-mail" required style="background-color: #00863E; color: white; border-color: #00863E;">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Kuidas saame teid aidata?</label>
+                                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="Sisestage sõnum" required style="background-color: #00863E; color: white; border-color: #00863E;"></textarea>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-lg w-100" style="background-color: #00863e; color: white; border: none; padding: 10px; border-radius: 50px;">
+                                        Saada
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5" style="background-color: #092918; color: white;">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                
+                <div class="col-lg-3 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <div class="d-inline-block">
+                        <img src="Logo.svg" alt="PronksiRB Logo" style="width: 150px; margin-bottom: 20px;">
+                        <p class="lead fs-5" style="opacity: 0.85;">
+                            Raamatupidamine,<br><span style="color: #00863E;">mida saab usaldada</span>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <p class="text-uppercase mb-3 fs-6" style="opacity: 0.85;">
+                        Alustame koostööd <span style="color: #00863E;">juba täna</span>
+                    </p>
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="icon4.png" alt="Адрес" class="me-3" style="width: 80px;">
+                            <span class="fs-6">Vesivärava 50-212, Tallinn 10126</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="icon5.png" alt="Email" class="me-3" style="width: 80px;">
+                            <div class="d-flex flex-column text-start fs-6">
+                                <a href="mailto:info@pronksirb.ee" class="text-decoration-none" style="color: white; opacity: 0.85;">info@pronksirb.ee</a>
+                                <a href="mailto:sekretar@pronksirb.ee" class="text-decoration-none" style="color: white; opacity: 0.85;">sekretar@pronksirb.ee</a>
+                                <a href="mailto:larissa@pronksirb.ee" class="text-decoration-none" style="color: white; opacity: 0.85;">larissa@pronksirb.ee</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="icon6.png" alt="Телефон" class="me-3" style="width: 80px;">
+                            <div class="d-flex flex-column text-start fs-6">
+                                <a href="tel:+3726410108" class="text-decoration-none" style="color: white; opacity: 0.85;">+372 6410108, +372 6410 109</a>
+                                <a href="tel:+3725156260" class="text-decoration-none" style="color: white; opacity: 0.85;">+372 51 56 260, +372 5021702</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-12 text-center text-lg-end mt-4 mt-lg-0">
+                    <img src="zdanie.png" class="img-fluid rounded shadow" alt="Офис PronksiRB" style="max-height: 250px; object-fit: cover;">
+                </div>
+                
+            </div>
+            
+            <hr class="mt-4 mb-3" style="border-color: rgba(255, 255, 255, 0.2);">
+            <div class="row">
+                <div class="col-12 text-center" style="opacity: 0.7;">
+                    <p class="mb-0">
+                        OÜ Pronksi Raamatupidamisbüroo Reg.Nr 10586403 © 2025 Kõik õigused kaitstud.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="text-center py-4" style="background-color: #092918; color: white;">
+        <p class="mb-0" style="opacity: 0.7;">
+            Designed and built by 
+            <a href="https://www.instagram.com/ne.klinika/" target="_blank" style="color: #00863E; text-decoration: none; font-weight: bold;">NE KLINIKA</a>
+        </p>
+    </div>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // Анимация только при первом появлении
+    duration: 800, // Длительность анимации в мс
+    offset: 100 // Смещение триггера анимации
+  });
+</script>
