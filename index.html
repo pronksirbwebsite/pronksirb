@@ -397,11 +397,12 @@
                     }
                     
                     .service-link-card .card-body {
-                        background-color: #00863E; /* Темно-зеленый фон для текста */
+                        background-color: #00863E;
                         padding: 20px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        flex-wrap: wrap; /* Разрешаем элементам переноситься на новую строку */
                     }
                     
                     .service-link-card .card-title {
@@ -409,13 +410,14 @@
                         font-size: 1.25rem;
                         font-weight: bold;
                         display: block;
-                        width: 100%;
+                        width: 100%; /* Принудительно занимает всю ширину, заставляя следующий элемент перенестись */
                     }
                     
                     .service-link-card .arrow-icon {
                         width: 24px;
                         height: 24px;
-                        margin-left: 10px;
+                        margin-left: auto; /* Прижимает стрелку к правому краю */
+                        margin-top: 10px; /* Отступ сверху, чтобы отделить от текста */
                     }
                 </style>
     
