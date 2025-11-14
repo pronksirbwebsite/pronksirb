@@ -27,7 +27,7 @@
       
           <!-- Логотип -->
           <a class="navbar-brand" href="index.html">
-            <img src="Logo.svg" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 150px;">
+            <img src="Logo.svg" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 200px;">
             <img src="Logo.svg" alt="Логотип" class="img-fluid d-block d-md-none" style="max-height: 100px;">
           </a>
       
@@ -513,21 +513,19 @@
                             <ul class="list-unstyled">
                                 <li class="mb-2"><a href="https://www.emta.ee" target="_blank" class="link-light text-decoration-none">Maksu- ja Tolliamet</a></li>
                                 <li class="mb-2"><a href="https://www.stat.ee/et" target="_blank" class="link-light text-decoration-none">Statistikaamet</a></li>
-                                <li class="mb-2"><a href="https://e-arved.ee/" target="_blank" class="link-light text-decoration-none">Ettevõtjale</a></li>
                                 <li class="mb-2"><a href="https://mtr.ttja.ee/public" target="_blank" class="link-light text-decoration-none">Majandustegevuse register</a></li>
-                                <li class="mb-2"><a href="https://juhatus.ee/ru/" target="_blank" class="link-light text-decoration-none">Korteriühistute foorum</a></li>
                                 <li class="mb-2"><a href="https://www.riigiteataja.ee/en/search/legal_acts" target="_blank" class="link-light text-decoration-none">Seadused</a></li>
+                                <li class="mb-2"><a href="https://www.kalkulaator.ee" target="_blank" class="link-light text-decoration-none">Palgakalkulaator</a></li>
                             </ul>
                         </div>
     
                         <div class="col-lg-4 col-md-6 mb-4">
                             <ul class="list-unstyled">
-                                <li class="mb-2"><a href="https://www.haigekassa.ee" target="_blank" class="link-light text-decoration-none">Haigekassa</a></li>
+                                <li class="mb-2"><a href="https://www.haigekassa.ee" target="_blank" class="link-light text-decoration-none">Tervisekassa</a></li>
                                 <li class="mb-2"><a href="https://x-tee.ee/" target="_blank" class="link-light text-decoration-none">X-tee</a></li>
                                 <li class="mb-2"><a href="https://eteenindus.mnt.ee/main.html#autod" target="_blank" class="link-light text-decoration-none">Maanteamet</a></li>
                                 <li class="mb-2"><a href="https://www.seb.ee" target="_blank" class="link-light text-decoration-none">SEB</a></li>
                                 <li class="mb-2"><a href="https://tootukassa.ee" target="_blank" class="link-light text-decoration-none">Töötukassa</a></li>
-                                <li class="mb-2"><a href="https://www.kalkulaator.ee" target="_blank" class="link-light text-decoration-none">Palgakalkulaator</a></li>
                             </ul>
                         </div>
     
@@ -535,7 +533,7 @@
                             <ul class="list-unstyled">
                                 <li class="mb-2"><a href="https://ariregister.rik.ee" target="_blank" class="link-light text-decoration-none">Äriregister</a></li>
                                 <li class="mb-2"><a href="https://ariregister.rik.ee/eng" target="_blank" class="link-light text-decoration-none">Aastaaruanne</a></li>
-                                <li class="mb-2"><a href="https://www.krediidiinfo.ee/en/" target="_blank" class="link-light text-decoration-none">Juriidiliste isikute maksevõime</a></li>
+                                <li class="mb-2"><a href="https://https://creditinfo.ee/" target="_blank" class="link-light text-decoration-none">Juriidiliste isikute maksevõime</a></li>
                                 <li class="mb-2"><a href="https://www.swedbank.ee/private" target="_blank" class="link-light text-decoration-none">SWEDBANK</a></li>
                                 <li class="mb-2"><a href="https://www.pensionikeskus.ee/en/" target="_blank" class="link-light text-decoration-none">Pensioniinfo</a></li>
                                 <li class="mb-2"><a href="https://www.haigekassa.ee" target="_blank" class="link-light text-decoration-none">Haigushüvitised</a></li>
@@ -674,4 +672,43 @@
     duration: 800, // Длительность анимации в мс
     offset: 100 // Смещение триггера анимации
   });
+</script>
+
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" 
+style="position: fixed; bottom: 20px; right: 20px;
+        max-width: 350px; padding: 20px;
+        background: #092918; color: white;
+        border: 1px solid #00863E;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+        z-index: 99999; display: none;
+        font-family: Inter, sans-serif;">
+
+<h5 style="margin-bottom: 10px; font-weight: 600;">
+Me kasutame cookies
+</h5>
+
+<p style="font-size: 14px; opacity: 0.9; margin-bottom: 15px;">
+    Veebisait kasutab küpsiseid mugavama kasutuskogemuse tagamiseks.
+</p>
+
+<button id="cookie-accept"
+    style="background-color: #00863E; color: white;
+            border: none; padding: 10px 20px;
+            border-radius: 6px; cursor: pointer; width: 100%;">
+Nõustun
+</button>
+</div>
+
+<script>
+if (!localStorage.getItem("cookiesAccepted")) {
+document.getElementById("cookie-banner").style.display = "block";
+}
+
+document.getElementById("cookie-accept").onclick = function () {
+localStorage.setItem("cookiesAccepted", "true");
+document.getElementById("cookie-banner").style.display = "none";
+};
 </script>
