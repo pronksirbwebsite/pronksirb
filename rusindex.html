@@ -27,7 +27,7 @@
       
           <!-- Логотип -->
           <a class="navbar-brand" href="rusindex.html">
-            <img src="Logo.svg" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 150px;">
+            <img src="Logo.svg" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 200px;">
             <img src="Logo.svg" alt="Логотип" class="img-fluid d-block d-md-none" style="max-height: 100px;">
           </a>
       
@@ -304,7 +304,7 @@
                                 <img src="icon1.png" alt="Иконка бухгалтерия" class="icon-png">
                                 </div>
                             
-                            <h3>Полная бухгалтерия под ключ</h3>
+                            <h3>Полное бухгалтерское обслуживание</h3>
                             <p>
                                 Ведение учёта, отчётность, зарплаты, e-arved — точно, вовремя, без лишних забот.
                             </p>
@@ -321,7 +321,7 @@
                                 <img src="icon2.png" alt="Иконка юридическое" class="icon-png">
                                 </div>
                             
-                            <h3>Юридическое и налоговое сопровождение</h3>
+                            <h3>Поддержка</h3>
                             <p>
                                 Регистрация и изменения в коммерческом регистре, помощь по налогам, трудовому праву и оформлению сотрудников.
                             </p>
@@ -513,16 +513,14 @@
                             <ul class="list-unstyled">
                                 <li class="mb-2"><a href="https://www.emta.ee" target="_blank" class="link-light text-decoration-none">Налоговый Департамент</a></li>
                                 <li class="mb-2"><a href="https://www.stat.ee/et" target="_blank" class="link-light text-decoration-none">Департамент статистики</a></li>
-                                <li class="mb-2"><a href="https://e-arved.ee/" target="_blank" class="link-light text-decoration-none">Для предпринимателей</a></li>
                                 <li class="mb-2"><a href="https://mtr.ttja.ee/public" target="_blank" class="link-light text-decoration-none">Регистр Хоз. деятельности</a></li>
-                                <li class="mb-2"><a href="https://juhatus.ee/ru/" target="_blank" class="link-light text-decoration-none">Форум квартирных товариществ</a></li>
                                 <li class="mb-2"><a href="https://www.riigiteataja.ee/en/search/legal_acts" target="_blank" class="link-light text-decoration-none">Законы</a></li>
                             </ul>
                         </div>
     
                         <div class="col-lg-4 col-md-6 mb-4">
                             <ul class="list-unstyled">
-                                <li class="mb-2"><a href="https://www.haigekassa.ee" target="_blank" class="link-light text-decoration-none">Больничная касса</a></li>
+                                <li class="mb-2"><a href="https://www.haigekassa.ee" target="_blank" class="link-light text-decoration-none">Касса здоровья</a></li>
                                 <li class="mb-2"><a href="https://x-tee.ee/" target="_blank" class="link-light text-decoration-none">X-tee</a></li>
                                 <li class="mb-2"><a href="https://eteenindus.mnt.ee/main.html#autod" target="_blank" class="link-light text-decoration-none">Авторегистр</a></li>
                                 <li class="mb-2"><a href="https://www.seb.ee" target="_blank" class="link-light text-decoration-none">SEB</a></li>
@@ -535,10 +533,9 @@
                             <ul class="list-unstyled">
                                 <li class="mb-2"><a href="https://ariregister.rik.ee" target="_blank" class="link-light text-decoration-none">Коммерческий регистр</a></li>
                                 <li class="mb-2"><a href="https://ariregister.rik.ee/eng" target="_blank" class="link-light text-decoration-none">Годовой отчет</a></li>
-                                <li class="mb-2"><a href="https://www.krediidiinfo.ee/en/" target="_blank" class="link-light text-decoration-none">Платежеспособность юр. лиц</a></li>
+                                <li class="mb-2"><a href="https://creditinfo.ee/" target="_blank" class="link-light text-decoration-none">Платежеспособность юр. лиц</a></li>
                                 <li class="mb-2"><a href="https://www.swedbank.ee/private" target="_blank" class="link-light text-decoration-none">SWEDBANK</a></li>
                                 <li class="mb-2"><a href="https://www.pensionikeskus.ee/en/" target="_blank" class="link-light text-decoration-none">Информация о пенсиях</a></li>
-                                <li class="mb-2"><a href="https://www.haigekassa.ee" target="_blank" class="link-light text-decoration-none">Выплаты больничного</a></li>
                             </ul>
                         </div>
                     </div>
@@ -675,3 +672,43 @@
     offset: 100 // Смещение триггера анимации
   });
 </script>
+
+
+<!-- COOKIE BANNER -->
+        <div id="cookie-banner" 
+            style="position: fixed; bottom: 20px; right: 20px;
+                    max-width: 350px; padding: 20px;
+                    background: #092918; color: white;
+                    border: 1px solid #00863E;
+                    border-radius: 10px;
+                    box-shadow: 0 5px 25px rgba(0,0,0,0.4);
+                    z-index: 99999; display: none;
+                    font-family: Inter, sans-serif;">
+
+        <h5 style="margin-bottom: 10px; font-weight: 600;">
+            Мы используем cookies
+        </h5>
+
+        <p style="font-size: 14px; opacity: 0.9; margin-bottom: 15px;">
+            Сайт использует файлы cookie, чтобы сделать работу удобнее.
+        </p>
+
+        <button id="cookie-accept"
+                style="background-color: #00863E; color: white;
+                        border: none; padding: 10px 20px;
+                        border-radius: 6px; cursor: pointer; width: 100%;">
+            Понятно
+        </button>
+        </div>
+
+<script>
+    if (!localStorage.getItem("cookiesAccepted")) {
+      document.getElementById("cookie-banner").style.display = "block";
+    }
+  
+    document.getElementById("cookie-accept").onclick = function () {
+      localStorage.setItem("cookiesAccepted", "true");
+      document.getElementById("cookie-banner").style.display = "none";
+    };
+  </script>
+  
