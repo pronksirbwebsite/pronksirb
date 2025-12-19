@@ -26,11 +26,20 @@
         <div class="container-fluid">
       
           <!-- Логотип -->
-          <a class="navbar-brand" href="index.html">
-            <img src="Logo.svg" alt="Логотип" class="img-fluid d-none d-md-block" style="max-height: 200px;">
-            <img src="Logo.svg" alt="Логотип" class="img-fluid d-block d-md-none" style="max-height: 150px;">
-          </a>
-      
+        <a class="navbar-brand" href="index.html">
+    <!-- Десктоп -->
+        <img src="Logo_des.png"
+         alt="Логотип"
+         class="img-fluid d-none d-md-block"
+         style="max-height: 200px;">
+  
+    <!-- Мобилка -->
+        <img src="Logo_mob.png"
+         alt="Логотип"
+         class="img-fluid d-block d-md-none"
+         style="max-height: 150px;">
+        </a>
+  
           <!-- Бургер кнопка — только на мобильных -->
           <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background: transparent;">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
@@ -45,16 +54,34 @@
             <ul class="navbar-nav ms-auto text-center text-md-start">
               <li class="nav-item"><a class="nav-link" href="index.html">Avaleht</a></li>
               <li class="nav-item"><a class="nav-link" href="#about">Meist</a></li>
-              <li class="nav-item"><a class="nav-link" href="#services">Teenused</a></li>
-              <li class="nav-item"><a class="nav-link" href="#prices">Hinnad</a></li>
+              <li class="nav-item"><a class="nav-link" href="#prices">Hinnad ja pakkumised</a></li>
             </ul>
-            <a href="rusindex.html" class="btn btn-primary ms-3">RUS</a>
+            <div class="d-flex align-items-center ms-3 gap-3">
+
+                <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                    <img src="est flag.png" alt="EST" width="22" height="14" class="me-1">
+                    <span>EST</span>
+                </a>
+            
+                <a href="rusindex.html" class="d-flex align-items-center text-white text-decoration-none">
+                    <img src="rus.png" alt="RUS" width="22" height="14" class="me-1">
+                    <span>RUS</span>
+                </a>
+            
+                <a href="engindex.html" class="d-flex align-items-center text-white text-decoration-none">
+                    <img src="eng .png" alt="ENG" width="22" height="14" class="me-1">
+                    <span>ENG</span>
+                </a>
+            
+            </div>
+            
+            
 
           </div>
         </div>
       </nav>
       
-    <!-- Offcanvas меню — только на мобильных -->
+      <!-- Offcanvas меню — только на мобильных -->
       <div class="offcanvas offcanvas-end d-md-none"
      tabindex="-1"
      id="offcanvasMenu"
@@ -78,17 +105,31 @@
             <li class="nav-item">
                 <a class="nav-link" href="#about">Meist</a>
             </li>
+            
             <li class="nav-item">
-                <a class="nav-link" href="#services">Teenused</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#prices">Hinnad</a>
+                <a class="nav-link" href="#prices">Hinnad ja pakkumised</a>
             </li>
         </ul>
 
-        <div class="text-center mt-3">
-            <a href="rusindex.html" class="btn-lang">RUS</a>
+        <div class="d-flex justify-content-center gap-4 mt-3">
+
+            <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+                <img src="est flag.png" alt="EST" width="22" height="14" class="me-1">
+                <span>EST</span>
+            </a>
+        
+            <a href="rusindex.html" class="d-flex align-items-center text-white text-decoration-none">
+                <img src="rus.png" alt="RUS" width="22" height="14" class="me-1">
+                <span>RUS</span>
+            </a>
+        
+            <a href="engindex.html" class="d-flex align-items-center text-white text-decoration-none">
+                <img src="eng .png" alt="ENG" width="22" height="14" class="me-1">
+                <span>ENG</span>
+            </a>
+        
         </div>
+        
 
     </div>
 </div>
@@ -382,7 +423,7 @@
     <div class="container">
         <div class="row mb-5" data-aos="fade-up">
             <div class="col-12 text-center">
-                <h2 class="display-5 fw-bold">Meie teenused</h2>
+                <h2 class="display-5 fw-bold">Hinnad ja pakkumised</h2>
                 <p class="lead" style="opacity: 0.85;">
                     Kõik, mida teie ettevõte vajab — raamatupidamisest <br> kuni konsultatsioonide ja igapäevase toeni.
                 </p>
