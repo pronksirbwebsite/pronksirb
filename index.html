@@ -17,6 +17,74 @@
 
     <!-- Собственные стили -->
     <link rel="stylesheet" href="style.css" />
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".number");
+        
+            const animateCounter = (counter, delay = 0) => {
+                setTimeout(() => {
+                    // начальный визуал
+                    counter.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+                    counter.style.opacity = "1";
+                    counter.style.transform = "translateY(0)";
+        
+                    const target = +counter.dataset.target;
+                    const original = counter.textContent;
+                    const hasK = original.includes("k");
+                    const hasPercent = original.includes("%");
+                    const suffix = original.replace(/[0-9]/g, "").trim();
+        
+                    let current = 0;
+                    const duration = 1200;
+                    const step = Math.max(1, Math.floor(target / (duration / 16)));
+        
+                    const update = () => {
+                        current += step;
+                        if (current > target) current = target;
+        
+                        let value = current;
+                        if (hasK) value = Math.floor(current / 1000) + "k";
+                        if (hasPercent) value = current + "%";
+                        if (suffix && !hasK && !hasPercent) value = current + " " + suffix;
+        
+                        counter.textContent = value;
+        
+                        if (current < target) {
+                            requestAnimationFrame(update);
+                        }
+                    };
+        
+                    counter.textContent = "0";
+                    update();
+                }, delay);
+            };
+        
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    const counter = entry.target;
+        
+                    if (entry.isIntersecting && !counter.dataset.started) {
+                        counter.dataset.started = "true";
+        
+                        animateCounter(counter, [...counters].indexOf(counter) * 200);
+        
+                        observer.unobserve(counter);
+                    }
+                });
+            }, {
+                threshold: 0.6
+            });
+        
+            counters.forEach(counter => {
+                // стартовое состояние
+                counter.style.opacity = "0";
+                counter.style.transform = "translateY(30px)";
+                observer.observe(counter);
+            });
+        });
+        </script>
+    
   </head>
   <body>
 
@@ -197,7 +265,7 @@
                     <div class="stat-image-container">
                         <img src="Rectangle1.png" alt="1k Клиентов">
                         <div class="content">
-                            <div class="number">1k</div>
+                            <div class="number" data-target="1000">1000</div>
                             <div class="label">Klienti</div>
                         </div>
                     </div>
@@ -207,7 +275,7 @@
                     <div class="stat-image-container">
                         <img src="Rectangle1.png" alt="3 Языка общения">
                         <div class="content">
-                            <div class="number">3</div>
+                            <div class="number" data-target="3">3</div>
                             <div class="label">Suhtluskeelt</div>
                         </div>
                     </div>
@@ -217,7 +285,7 @@
                     <div class="stat-image-container">
                         <img src="Rectangle1.png" alt="100% Доверия">
                         <div class="content">
-                            <div class="number">100%</div>
+                            <div class="number" data-target="100">100%</div>
                             <div class="label">Usaldus</div>
                         </div>
                     </div>
@@ -227,7 +295,7 @@
                     <div class="stat-image-container">
                         <img src="Rectangle1.png" alt="25 лет Опыта">
                         <div class="content">
-                            <div class="number">26 aastat</div>
+                            <div class="number" data-target="26">26 aastat</div>
                             <div class="label">Kogemust</div>
                         </div>
                     </div>
