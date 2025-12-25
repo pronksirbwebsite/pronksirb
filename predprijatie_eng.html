@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Собственные стили -->
+    <link rel="stylesheet" href="style.css" />
+
+    
+    
+  </head>
+  <body>
+
+       
+    <!-- Нав -->
+    <nav class="navbar navbar-expand-md navbar-dark px-3 py-2 w-100 position-absolute top-0 start-0 z-3">
+        <div class="container-fluid">
+      
+          <!-- Логотип -->
+        <a class="navbar-brand" href="engindex.html">
+    <!-- Десктоп -->
+        <img src="Logo_desktop.png"
+         alt="Логотип"
+         class="img-fluid d-none d-md-block"
+         style="max-height: 100px;">
+  
+    <!-- Мобилка -->
+        <img src="Logo_mobile.png"
+         alt="Логотип"
+         class="img-fluid d-block d-md-none"
+         style="max-height: 150px;">
+        </a>
+  
+          <!-- Бургер кнопка — только на мобильных -->
+          <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background: transparent;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="7" x2="26" y2="7" />
+                <line x1="4" y1="15" x2="26" y2="15" />
+                <line x1="4" y1="23" x2="26" y2="23" />
+            </svg>
+        </button>
+      
+          <!-- Меню для десктопа -->
+          <div class="collapse navbar-collapse d-none d-md-block" id="mainNav">
+            <ul class="navbar-nav ms-auto text-center text-md-start">
+              <li class="nav-item"><a class="nav-link" href="engindex.html" style="font-size:24px;">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="engindex.html" style="font-size:24px;">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="engindex.html" style="font-size:24px;">Services</a></li>
+            </ul>
+            <div class="d-flex align-items-center ms-3 gap-3">
+
+                <a href="predprijatie_est.html" class="d-flex align-items-center text-white text-decoration-none">
+                    <img src="est flag.png" alt="EST" width="22" height="14" class="me-1">
+                    <span>EST</span>
+                </a>
+            
+                <a href="predprijatie_rus.html" class="d-flex align-items-center text-white text-decoration-none">
+                    <img src="rus.png" alt="RUS" width="22" height="14" class="me-1">
+                    <span>RUS</span>
+                </a>
+            
+                <a href="predprijatie_eng.html" class="d-flex align-items-center text-white text-decoration-none">
+                    <img src="eng .png" alt="ENG" width="22" height="14" class="me-1">
+                    <span>ENG</span>
+                </a>
+            
+            </div>
+            
+            
+
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Offcanvas меню — только на мобильных -->
+      <div class="offcanvas offcanvas-end d-md-none"
+     tabindex="-1"
+     id="offcanvasMenu"
+     aria-labelledby="offcanvasMenuLabel"
+     style="background-color: #00863E; width: 50vw;">
+
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+        <button type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Sulge"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+
+        <ul class="navbar-nav text-center">
+            <li class="nav-item">
+                <a class="nav-link" href="engindex.html" style="font-size:20px;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="engindex.html" style="font-size:20px;">About Us</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="engindex.html" style="font-size:20px;">Services</a>
+            </li>
+        </ul>
+
+       <div class="d-flex flex-column align-items-center mt-3">
+
+            <a href="predprijatie_est.html" class="d-flex align-items-center text-white text-decoration-none">
+                <img src="est flag.png" alt="EST" width="22" height="14" class="me-1">
+                <span>EST</span>
+            </a>
+        
+            <a href="predprijatie_rus.html" class="d-flex align-items-center text-white text-decoration-none">
+                <img src="rus.png" alt="RUS" width="22" height="14" class="me-1">
+                <span>RUS</span>
+            </a>
+        
+            <a href="predprijatie_eng.html" class="d-flex align-items-center text-white text-decoration-none">
+                <img src="eng .png" alt="ENG" width="22" height="14" class="me-1">
+                <span>ENG</span>
+            </a>
+        
+        </div>
+        
+
+    </div>
+</div>
+
+
+      
+      
+      
+    
+    <!-- 👇 ОБЯЗАТЕЛЬНО внизу страницы -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <section id="page-hero" class="py-5 mt-custom" style="background-color: #092918; color: white;">
+        <div class="container">
+            
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12 text-center">
+                    
+                    <h1 class="display-4 fw-bold mb-3">
+                        Business Accounting Services
+                    </h1>
+                    
+                    <p class="lead col-lg-8 mx-auto" style="opacity: 0.85;">
+                        Professional accounting support for companies of any size.
+                    </p>
+                    
+                </div>
+            </div>
+    
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-lg-10 col-md-12">
+                    <img 
+                        src="predprijatie.png" 
+                        alt="Корпоративные услуги" 
+                        class="img-fluid rounded-3 shadow-lg" 
+                        style="width: 100%; height: auto; max-height: 500px; object-fit: cover;"
+                    >
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+
+    <section id="tariff-plans" class="py-5" style="background-color: #092918; color: white;">
+        <div class="container">
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold">
+                        <span style="color: #00863E;">Accounting</span>
+                        services<br>for companies
+                        
+                    </h2>
+                </div>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                
+                <style>
+                    /* Контейнер для карточки тарифа */
+                    .tariff-card-container {
+                        position: relative;
+                        min-height: 550px; /* Высота для соответствия макету */
+                        padding: 30px;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        color: white; 
+                        /* Используем Flex для разделения верхней и нижней части контента */
+                        display: flex;
+                        flex-direction: column;
+                        z-index: 1; /* Чтобы тень от карточки была видна */
+                        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+                    }
+    
+                    /* Фон-изображение */
+                    .tariff-card-container img.card-bg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: 1; /* Фон под текстом */
+                        opacity: 0.95; /* Небольшая прозрачность */
+                    }
+    
+                    /* Контент поверх фона */
+                    .tariff-card-container .content {
+                        position: relative;
+                        z-index: 2; /* Текст над фоном */
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    /* Заголовок тарифа */
+                    .tariff-card-container h2 {
+                        font-size: 2rem;
+                        font-weight: bold;
+                        color: white; /* Цвет текста на фоне */
+                        margin-bottom: 20px;
+                    }
+                    
+                    /* Стиль для ЦЕНЫ */
+                    .tariff-card-container .price-main {
+                        font-size: 3rem; /* Крупный размер H1 */
+                        font-weight: bold;
+                        color: #ffffff; /* Зеленый цвет цены */
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                    
+                    /* Линия-разделитель */
+                    .tariff-card-container hr {
+                        border-top: 2px solid #00863E;
+                        opacity: 1;
+                        margin: 20px 0;
+                    }
+    
+                    /* Стиль для списка услуг */
+                    .tariff-card-container ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+    
+                    .tariff-card-container ul li {
+                        font-size: 1rem;
+                        margin-bottom: 12px;
+                        position: relative;
+                        padding-left: 20px;
+                    }
+                    
+                    /* Зеленые стрелки для списка */
+                    .tariff-card-container ul li::before {
+                        content: "→";
+                        color: #00863E; 
+                        font-weight: bold;
+                        font-size: 1.2em;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%); 
+                    }
+                </style>
+                
+                <div class="col-lg-5 col-md-6 d-flex" data-aos="fade-up">
+                    <div class="tariff-card-container">
+                        <img src="predprijatierec.png" class="card-bg" alt="Налогооблагаемая фирма">
+                        
+                        <div class="content">
+                            
+                            <h2 class="mb-0">VAT-registered company</h2>
+                            
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="price-main">from 150 €</span>
+                                <p class="mb-0">/per month</p>
+                            </div>
+                            
+                            <hr>
+                            
+                            <ul>
+                                <li>Payroll calculation (up to 5 employees)</li>
+                                <li>Submission of TSD declarations</li>
+                                <li>VAT accounting and calculations</li>
+                                <li>Submission of VAT (KMD) returns</li>
+                                <li>Preparation of the annual report</li>
+                                <li>Consultations</li>
+                            </ul>
+                            
+                            <a href="#contact" class="btn btn-lg fw-bold mt-4" style="background-color: #00863E; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 col-md-6 d-flex" data-aos="fade-up">
+                    <div class="tariff-card-container">
+                        <img src="predprijatierec.png" class="card-bg" alt="Неналогооблагаемая фирма">
+                        
+                        <div class="content">
+                            
+                            <h2 class="mb-0">Неналогообязанная фирма</h2>
+                            
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="price-main">from 100 €</span>
+                                <p class="mb-0">/per month</p>
+                            </div>
+                            
+                            <hr>
+                            
+                            <ul>
+                                <li>Payroll calculation (up to 5 employees)</li>
+                                <li>Submission of TSD declarations</li>
+                                <li>Turnover accounting</li>
+                                <li>Preparation of the annual report</li>
+                                <li>Consultations</li>
+                            </ul>
+                            
+                            <a href="#contact" class="btn btn-lg fw-bold mt-4" style="background-color: #00863E; color: white;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact" class="py-5" style="background-color: #092918; color: white;">
+        <div class="container" data-aos="fade-up">
+            <div class="row align-items-center">
+    
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4">
+                        Leave a request <br>
+                        <span style="color: #00863E;">— get a consultation</span>
+                    </h2>
+                    <p class="lead" style="opacity: 0.85;">
+                        We will contact you and help find the best solution for your business.
+                        Clear, fast, and with no obligations.
+                    </p>
+                </div>
+    
+                <div class="col-lg-6 col-md-12" data-aos="fade-up">
+                    <div class="position-relative rounded-3 overflow-hidden shadow-lg p-4" style="min-height: 550px;">
+                        <img src="ContactForm.png" alt="Фон формы заявки" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover; z-index: 1;">
+    
+                        <div class="position-relative p-4" style="z-index: 2;">
+                            <form action="https://formsubmit.co/larissa@pronksirb.ee" method="POST" class="row g-3">
+    
+                                <input type="hidden" name="_next" value="success_eng.html">
+                                
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required style="background-color: #00863E; color: white; border-color: #00863E;">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Enter your phone" required style="background-color: #00863E; color: white; border-color: #00863E;">
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your e-mail" required style="background-color: #00863E; color: white; border-color: #00863E;">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">How can we help you?</label>
+                                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="Enter your message" required style="background-color: #00863E; color: white; border-color: #00863E;"></textarea>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-lg w-100" style="background-color: #00863e; color: white; border: none; padding: 10px; border-radius: 50px;">
+                                        Send request
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5" style="background-color: #092918; color: white;">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                
+                <div class="col-lg-3 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <div class="d-inline-block">
+                        <img src="Logo_desktop.png" alt="PronksiRB Logo" style="width: 200px; margin-bottom: 20px;">
+                        <p class="lead fs-5" style="opacity: 0.85;">
+                           Accounting<br><span style="color: #00863E;">you can trust</span>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+                    <p class="text-uppercase mb-3 fs-6" style="opacity: 0.85;">
+                        Let’s start working together <span style="color: #00863E;">today</span>
+                    </p>
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="icon4.png" alt="Адрес" class="me-3" style="width: 80px;">
+                            <span class="fs-6">Vesivärava 50-212, Tallinn 10126</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="icon5.png" alt="Email" class="me-3" style="width: 80px;">
+                            <div class="d-flex flex-column text-start fs-6">
+                                <a href="mailto:info@pronksirb.ee" class="text-decoration-none" style="color: white; opacity: 0.85;">info@pronksirb.ee</a>
+                                <a href="mailto:sekretar@pronksirb.ee" class="text-decoration-none" style="color: white; opacity: 0.85;">sekretar@pronksirb.ee</a>
+                                <a href="mailto:larissa@pronksirb.ee" class="text-decoration-none" style="color: white; opacity: 0.85;">larissa@pronksirb.ee</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="icon6.png" alt="Телефон" class="me-3" style="width: 80px;">
+                            <div class="d-flex flex-column text-start fs-6">
+                                <a href="tel:+3726410108" class="text-decoration-none" style="color: white; opacity: 0.85;">+372 64 10 108,</a>
+                                <a href="tel:+3725156260" class="text-decoration-none" style="color: white; opacity: 0.85;">+372 51 56 260, +372 50 21 702</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-12 text-center text-lg-end mt-4 mt-lg-0">
+                    <img src="zdanie.png" class="img-fluid rounded shadow" alt="Офис PronksiRB" style="max-height: 250px; object-fit: cover;">
+                </div>
+                
+            </div>
+            
+            <hr class="mt-4 mb-3" style="border-color: rgba(255, 255, 255, 0.2);">
+            <div class="row">
+                <div class="col-12 text-center" style="opacity: 0.7;">
+                    <p class="mb-0">
+                        OÜ Pronksi Raamatupidamisbüroo Reg.Nr 10586403 © 2025 Kõik õigused kaitstud.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="text-center py-4" style="background-color: #092918; color: white;">
+        <p class="mb-0" style="opacity: 0.7;">
+            Designed and built by 
+            <a href="https://www.instagram.com/ne.klinika/" target="_blank" style="color: #00863E; text-decoration: none; font-weight: bold;">NE KLINIKA</a>
+        </p>
+    </div>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // Анимация только при первом появлении
+    duration: 800, // Длительность анимации в мс
+    offset: 100 // Смещение триггера анимации
+  });
+</script>
