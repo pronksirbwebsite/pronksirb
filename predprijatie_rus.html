@@ -38,20 +38,29 @@
          style="max-height: 100px;">
   
     <!-- Мобилка -->
-        <img src="Logo_mobile.png"
+        <img src="Logo_desktop.png"
          alt="Логотип"
          class="img-fluid d-block d-md-none"
-         style="max-height: 150px;">
+         style="max-height: 80px;">
         </a>
   
           <!-- Бургер кнопка — только на мобильных -->
-          <button class="navbar-toggler d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background: transparent;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="4" y1="7" x2="26" y2="7" />
-                <line x1="4" y1="15" x2="26" y2="15" />
-                <line x1="4" y1="23" x2="26" y2="23" />
-            </svg>
-        </button>
+          <button class="navbar-toggler d-block d-md-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasMenu"
+        aria-controls="offcanvasMenu"
+        style="border:none; background:transparent;">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+         fill="none" stroke="#ffffff" stroke-width="5"
+         stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="7" x2="26" y2="7" />
+        <line x1="4" y1="15" x2="26" y2="15" />
+        <line x1="4" y1="23" x2="26" y2="23" />
+    </svg>
+
+</button>
       
           <!-- Меню для десктопа -->
           <div class="collapse navbar-collapse d-none d-md-block" id="mainNav">
@@ -86,58 +95,88 @@
       </nav>
       
       <!-- Offcanvas меню — только на мобильных -->
-      <div class="offcanvas offcanvas-end d-md-none"
-     tabindex="-1"
-     id="offcanvasMenu"
-     aria-labelledby="offcanvasMenuLabel"
-     style="background-color: #00863E; width: 50vw;">
+      <div class="offcanvas offcanvas-bottom d-md-none"
+      tabindex="-1"
+      id="offcanvasMenu"
+      style="
+         height:65vh;
+         background:#00863E;
+         border-top-left-radius:28px;
+         border-top-right-radius:28px;
+      ">
+ 
+     <!-- ХЕНДЛ -->
+     <div class="offcanvas-header justify-content-center position-relative">
+         <div style="
+             width:50px;
+             height:5px;
+             background:white;
+             border-radius:10px;
+             opacity:0.7;
+         "></div>
+ 
+         <button type="button"
+                 class="btn-close btn-close-white position-absolute end-0 me-3"
+                 data-bs-dismiss="offcanvas"
+                 aria-label="Sulge"></button>
+     </div>
+ 
+     <div class="offcanvas-body d-flex flex-column justify-content-between text-center">
+ 
+         <!-- НАВИГАЦИЯ -->
+         <ul class="navbar-nav gap-3">
+             <li class="nav-item">
+                 <a class="nav-link fw-bold text-white" style="font-size:26px;" href="rusindex.html">
+                     Главная
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link fw-bold text-white" style="font-size:26px;" href="rusindex.html">
+                     О нас
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link fw-bold text-white" style="font-size:26px;" href="rusindex.html">
+                     Наши услуги
+                 </a>
+             </li>
+         </ul>
+ 
+         <!-- ЯЗЫКИ -->
+         
+        <div class="d-flex justify-content-center gap-4 mt-4">
 
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Меню</h5>
-        <button type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Sulge"></button>
-    </div>
-
-    <div class="offcanvas-body d-flex flex-column justify-content-between">
-
-        <ul class="navbar-nav text-center">
-            <li class="nav-item">
-                <a class="nav-link" href="rusindex.html" style="font-size:20px;">Главная</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="rusindex.html" style="font-size:20px;">О нас</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="rusindex.html" style="font-size:20px;">Наши услуги</a>
-            </li>
-        </ul>
-
-      <div class="d-flex flex-column align-items-center mt-3">
-
-            <a href="predprijatie_est.html" class="d-flex align-items-center text-white text-decoration-none">
-                <img src="est flag.png" alt="EST" width="22" height="14" class="me-1">
-                <span>EST</span>
+            <a href="predprijatie_rus.html"
+               style="
+                background:white;
+                color:#00863E;
+                padding:8px 16px;
+                border-radius:30px;
+                display:flex;
+                align-items:center;
+                gap:8px;
+                font-weight:bold;
+                text-decoration:none;
+               ">
+                <img src="rus.png" width="22">
+                RUS
             </a>
-        
-            <a href="predprijatie_rus.html" class="d-flex align-items-center text-white text-decoration-none">
-                <img src="rus.png" alt="RUS" width="22" height="14" class="me-1">
-                <span>RUS</span>
-            </a>
-        
-            <a href="predprijatie_eng.html" class="d-flex align-items-center text-white text-decoration-none">
-                <img src="eng .png" alt="ENG" width="22" height="14" class="me-1">
-                <span>ENG</span>
-            </a>
-        
-        </div>
-        
 
-    </div>
-</div>
+            <a href="predprijatie_est.html"
+               class="text-white text-decoration-none d-flex align-items-center gap-2">
+                <img src="est flag.png" width="22">
+                EST
+            </a>
 
+            <a href="predprijatie_eng.html"
+               class="text-white text-decoration-none d-flex align-items-center gap-2">
+                <img src="eng .png" width="22">
+                ENG
+            </a>
+ 
+         </div>
+     </div>
+ </div>
 
       
       
